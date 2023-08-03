@@ -14,7 +14,9 @@ struct ContentView: View {
         NavigationStack {
             List {
                 ForEach(todoViewModel.todos) { todo in
-                    TodoCardView(todo: todo)
+                    NavigationLink(value: todo) {
+                        TodoCardView(todo: todo)
+                    }
                 }
             }
             .navigationTitle("Todo List")
@@ -24,6 +26,9 @@ struct ContentView: View {
                 }, label: {
                     Image(systemName: "plus")
                 })
+            }
+            .navigationDestination(for: TodoEntity.self) { todo in
+                TodoDetailView(todo: todo)
             }
         }
         

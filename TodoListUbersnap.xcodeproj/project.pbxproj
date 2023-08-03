@@ -20,6 +20,7 @@
 		65E993CF2A7BB64B00CC206D /* TodoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E993CE2A7BB64B00CC206D /* TodoCardView.swift */; };
 		65E993D22A7BB88800CC206D /* TodoEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E993D02A7BB88800CC206D /* TodoEntity+CoreDataClass.swift */; };
 		65E993D32A7BB88800CC206D /* TodoEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E993D12A7BB88800CC206D /* TodoEntity+CoreDataProperties.swift */; };
+		65E993D82A7BBE1200CC206D /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E993D72A7BBE1200CC206D /* TodoDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		65E993CE2A7BB64B00CC206D /* TodoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCardView.swift; sourceTree = "<group>"; };
 		65E993D02A7BB88800CC206D /* TodoEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		65E993D12A7BB88800CC206D /* TodoEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		65E993D72A7BBE1200CC206D /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				6502EE032A7BAE3B00C1F167 /* ContentView.swift */,
+				65E993D72A7BBE1200CC206D /* TodoDetailView.swift */,
 				65E993CE2A7BB64B00CC206D /* TodoCardView.swift */,
 			);
 			path = Views;
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65E993CF2A7BB64B00CC206D /* TodoCardView.swift in Sources */,
+				65E993D82A7BBE1200CC206D /* TodoDetailView.swift in Sources */,
 				6502EE042A7BAE3B00C1F167 /* ContentView.swift in Sources */,
 				65E993CB2A7BB05D00CC206D /* DataController.swift in Sources */,
 				65E993CD2A7BB06F00CC206D /* TodosViewModel.swift in Sources */,

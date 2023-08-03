@@ -17,6 +17,9 @@
 		65E993C92A7BAFB100CC206D /* TodoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65E993C72A7BAFB100CC206D /* TodoList.xcdatamodeld */; };
 		65E993CB2A7BB05D00CC206D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E993CA2A7BB05D00CC206D /* DataController.swift */; };
 		65E993CD2A7BB06F00CC206D /* TodosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E993CC2A7BB06F00CC206D /* TodosViewModel.swift */; };
+		65E993CF2A7BB64B00CC206D /* TodoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E993CE2A7BB64B00CC206D /* TodoCardView.swift */; };
+		65E993D22A7BB88800CC206D /* TodoEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E993D02A7BB88800CC206D /* TodoEntity+CoreDataClass.swift */; };
+		65E993D32A7BB88800CC206D /* TodoEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E993D12A7BB88800CC206D /* TodoEntity+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		65E993C82A7BAFB100CC206D /* TodoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoList.xcdatamodel; sourceTree = "<group>"; };
 		65E993CA2A7BB05D00CC206D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		65E993CC2A7BB06F00CC206D /* TodosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosViewModel.swift; sourceTree = "<group>"; };
+		65E993CE2A7BB64B00CC206D /* TodoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCardView.swift; sourceTree = "<group>"; };
+		65E993D02A7BB88800CC206D /* TodoEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		65E993D12A7BB88800CC206D /* TodoEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				6502EE012A7BAE3B00C1F167 /* TodoListUbersnapApp.swift */,
-				6502EE032A7BAE3B00C1F167 /* ContentView.swift */,
-				65E993CA2A7BB05D00CC206D /* DataController.swift */,
-				65E993CC2A7BB06F00CC206D /* TodosViewModel.swift */,
+				65E993D62A7BB89700CC206D /* Views */,
+				65E993D52A7BB89200CC206D /* ViewModel */,
+				65E993D42A7BB88E00CC206D /* Model */,
 				65E993C72A7BAFB100CC206D /* TodoList.xcdatamodeld */,
 				6502EE052A7BAE3D00C1F167 /* Assets.xcassets */,
 				6502EE072A7BAE3D00C1F167 /* Preview Content */,
@@ -134,6 +140,33 @@
 				6502EE1E2A7BAE3E00C1F167 /* TodoListUbersnapUITestsLaunchTests.swift */,
 			);
 			path = TodoListUbersnapUITests;
+			sourceTree = "<group>";
+		};
+		65E993D42A7BB88E00CC206D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65E993D02A7BB88800CC206D /* TodoEntity+CoreDataClass.swift */,
+				65E993D12A7BB88800CC206D /* TodoEntity+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65E993D52A7BB89200CC206D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				65E993CA2A7BB05D00CC206D /* DataController.swift */,
+				65E993CC2A7BB06F00CC206D /* TodosViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		65E993D62A7BB89700CC206D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6502EE032A7BAE3B00C1F167 /* ContentView.swift */,
+				65E993CE2A7BB64B00CC206D /* TodoCardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,11 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E993CF2A7BB64B00CC206D /* TodoCardView.swift in Sources */,
 				6502EE042A7BAE3B00C1F167 /* ContentView.swift in Sources */,
 				65E993CB2A7BB05D00CC206D /* DataController.swift in Sources */,
 				65E993CD2A7BB06F00CC206D /* TodosViewModel.swift in Sources */,
+				65E993D32A7BB88800CC206D /* TodoEntity+CoreDataProperties.swift in Sources */,
 				6502EE022A7BAE3B00C1F167 /* TodoListUbersnapApp.swift in Sources */,
 				65E993C92A7BAFB100CC206D /* TodoList.xcdatamodeld in Sources */,
+				65E993D22A7BB88800CC206D /* TodoEntity+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

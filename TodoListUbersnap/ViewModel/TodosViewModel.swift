@@ -17,12 +17,18 @@ final class TodosViewModel: ObservableObject {
     }
     
     func fetchTodos() {
-        let request = NSFetchRequest<TodoEntity>(entityName: "TodoList")
+        let request = NSFetchRequest<TodoEntity>(entityName: "TodoEntity")
         do {
             try todos = dataController.context.fetch(request)
         } catch let error {
             print("Error fetching. \(error.localizedDescription)")
         }
+    }
+    
+    func addNewTodo() {
+        let newTodo = TodoEntity(context: dataController.context)
+        todos.append(newTodo)
+        saveData()
     }
     
     func saveData() {

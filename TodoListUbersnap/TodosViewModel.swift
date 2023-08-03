@@ -8,9 +8,9 @@
 import Foundation
 import CoreData
 
-final class Todos: ObservableObject {
+final class TodosViewModel: ObservableObject {
     let dataController = DataController.instance
-    @Published var todoList = [TodoEntity]()
+    @Published var todos = [TodoEntity]()
     
     init() {
         fetchTodos()
@@ -19,7 +19,7 @@ final class Todos: ObservableObject {
     func fetchTodos() {
         let request = NSFetchRequest<TodoEntity>(entityName: "TodoList")
         do {
-            try todoList = dataController.context.fetch(request)
+            try todos = dataController.context.fetch(request)
         } catch let error {
             print("Error fetching. \(error.localizedDescription)")
         }
